@@ -18,26 +18,27 @@
         </nav>
 
         <div class="Calculator-form">
-            <label for="t-amt"> Enter Your Anual Income <i id="question"  class="fa-solid fa-question"> </i>  </label>
-            <input type="text" placeholder="Enter Gross Annual Income  " class="Annual-income" required name="t-amt"
+                <label for="t-amt"> Enter Your Anual Income <i id="question"  class="fa-solid fa-question"> </i>  </label>
+                <input type="text" placeholder="Enter Gross Annual Income  " class="Annual-income" required name="t-amt"
                 id="t-amt">
-            <i id="error1" class="fa-solid fa-circle-exclamation"></i>
+                <i id="error1" class="fa-solid fa-circle-exclamation"></i>
 
-            <label for="t-extra"> Enter Extra Income <i id="question2"  class="fa-solid fa-question"> </i> </label>
-            <input type="number" placeholder="Enter Extra Income From Other Source" class="Extra-income" id="t-extra">
-            <i  id="error2" class="fa-solid fa-circle-exclamation"></i>
+                <label for="t-extra"> Enter Extra Income <i id="question2"  class="fa-solid fa-question"> </i> </label>
+                <input type="text" placeholder="Enter Extra Income From Other Source" class="Extra-income" id="t-extra">
+                <i  id="error2" class="fa-solid fa-circle-exclamation"></i>
 
-            <label for="t-age"> Select Age Group <i id="question3"  class="fa-solid fa-question"> </i> </label>
-            <input type="number" placeholder="Enter Your Age" class="Age" id="t-age">
+                <label for="t-age"> Select Age Group <i id="question3"  class="fa-solid fa-question"> </i> </label>
+               <input type="number" placeholder="Enter Your Age" class="Age" id="t-age">
 
-            <label for="t-sub"> Enter total applicable deduction <i id="question4"  class="fa-solid fa-question"> </i> </label>
-            <input type="number" placeholder="Add Total applicable deduction" class="Deduction" id="t-sub">
+                <label for="t-sub"> Enter total applicable deduction <i id="question4"  class="fa-solid fa-question"> </i> </label>
+                <input type="number" placeholder="Add Total applicable deduction" class="Deduction" id="t-sub">
 
             <button class="Submit"> Submit </button>
 
         </div>
 
 
+        <!-- tooltip and suggestion box -->
  <div class="tooltip" id="tooltip">Gross Anual Income is Your Total Salary in a Year Before any Deduction</div>
  <div class="sug1" id="sug1">Extra Income From Your Other Source of Income</div>
  <div class="sug2" id="sug2">Select Age for Calculate Taxable Amount</div>
@@ -47,18 +48,34 @@
 
 
         <div id="Next-page">
-            <h1> Your Overall Income Will be </h1>
-            <h2 id="taxAmount"> </h2>
-            <p> After Tax deduction </p>
-            <button class="close"> Close </button>
-
-
+                <h1> Your Overall Income Will be </h1>
+                <h2 id="taxAmount"> </h2>
+                <p> After Tax deduction </p>
+                <button class="close"> Close </button>
         </div>
 
 
-       
 
+        <!-- starting page  -->
+        <div class="start-page">
+            <div class="start-page-content">
 
+                <h1> Tax Calculator </h1>
+                <h3> Overview </h3>
+                <hr>
+            </div>
+            <div class="strat-page-point">
+                <p> <b>  Introduction:  </b>   Briefly introduce the Tax Calculator and its purpose, highlighting its ability to calculate taxes based on income, age, and deductions.  </p>
+                <p> <b>  Key Features: </b>  Highlight user-friendly interface, dynamic calculation, age-based tax rates, customizable deductions, and error handling. </p>
+                <p> <b>  Usage Instructions: </b> Describe each input field (annual income, extra income, age, deductions) and its significance for accurate tax calculation. </p>
+                <p> <b> Benefits: </b> Outline how the Tax Calculator simplifies tax calculations, aids in understanding tax liabilities, and facilitates better financial planning. </p>
+                <p> <b> Disclaimer: </b> Include a disclaimer about the accuracy of calculations and advise users to consult a tax professional for personalized advice. </p>
+            </div>
+            <div class="startbtn">
+                <button> Calculate Now </button>
+            </div>
+
+        </div>
 
     </div>
 

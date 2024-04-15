@@ -2,9 +2,18 @@ const Submit = document.querySelector(".Submit");
 const Result = document.querySelector("#Next-page");
 const closebtn = document.querySelector(".close");
 const Taxamt = document.querySelector("#taxAmount");
-const error1 = document.querySelector(".error-icon");
-const error2 = document.querySelector(".error-icon2");
+const error1 = document.querySelectorAll("#error1");
+const error2 = document.querySelectorAll("#error2");
 const input = document.querySelector("input");
+const input1 = document.querySelector("#t-extra");
+const maincon = document.querySelector(".Calculator-form");
+const startbtn = document.querySelector(".startbtn");
+const startpg = document.querySelector(".start-page");
+const anual = document.querySelector(".Annual-income");
+const finput = document.querySelector("#t-amt");
+startbtn.addEventListener("click", function () {
+  startpg.style.display = "none";
+});
 
 // suggestion 1
 const hoverLine = document.getElementById("question");
@@ -78,6 +87,16 @@ hoverline2.addEventListener("mouseleave", function () {
   tool2.style.display = "none";
 });
 
+// input.addEventListener("input", () => {
+//   error2.forEach((icon) => {
+//     if (isNaN(input.value)) {
+//       Extraincome.style.display = "inline-block";
+//     } else {
+//       icon.style.display = "none";
+//     }
+//   });
+// });
+
 Submit.addEventListener("click", function () {
   const Annualincome = parseInt(document.querySelector(".Annual-income").value);
   const Extraincome = parseInt(document.querySelector(".Extra-income").value);
@@ -105,10 +124,34 @@ Submit.addEventListener("click", function () {
 
     const taxAmount = taxRate * taxableIncome;
     Taxamt.textContent = totalIncome - taxAmount;
-    console.log(Annualincome - taxAmount);
   }
 });
 
+// close the result window
 closebtn.addEventListener("click", function () {
   Result.style.display = "none";
+});
+
+anual.addEventListener("input", () => {
+  error1.forEach((icon) => {
+    if (isNaN(input.value)) {
+      icon.style.display = "inline-block";
+      finput.style.borderColor = "red";
+    } else {
+      icon.style.display = "none";
+      finput.style.borderColor = "green";
+    }
+  });
+});
+
+input1.addEventListener("input", () => {
+  error2.forEach((icon) => {
+    if (isNaN(input1.value)) {
+      icon.style.display = "inline-block";
+      input1.style.borderColor = "red";
+    } else {
+      icon.style.display = "none";
+      input1.style.borderColor = "green";
+    }
+  });
 });
