@@ -87,16 +87,6 @@ hoverline2.addEventListener("mouseleave", function () {
   tool2.style.display = "none";
 });
 
-// input.addEventListener("input", () => {
-//   error2.forEach((icon) => {
-//     if (isNaN(input.value)) {
-//       Extraincome.style.display = "inline-block";
-//     } else {
-//       icon.style.display = "none";
-//     }
-//   });
-// });
-
 Submit.addEventListener("click", function () {
   const Annualincome = parseInt(document.querySelector(".Annual-income").value);
   const Extraincome = parseInt(document.querySelector(".Extra-income").value);
