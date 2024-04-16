@@ -65,7 +65,7 @@ After filling in all the details, click the "Submit" button to see your calculat
 ### 5. Test Case: Validate the functionality of the submit button.
 **Description:** Confirm that clicking the submit button triggers the tax calculation process and displays the result accurately.
 
-[![submit.png](https://i.postimg.cc/8kF84DXQ/submit.png)](https://postimg.cc/pyt1XNtq)
+[![result.png](https://i.postimg.cc/W3yfJF0W/result.png)](https://postimg.cc/S2WGBKTC)
 
 ### 6. Test Case: Test the tax calculation for Selecting age-Group.
 **Description:** Verify that the tax calculator correctly handles Through Age-Group.
