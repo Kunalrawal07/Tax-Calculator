@@ -13,25 +13,25 @@
 
 <body>
     <div id="Main-container">
-        <nav>
-            <h1> Tax Calculator </li>
-        </nav>
-
         <div class="Calculator-form">
+                <h1 class="main-hading"> Tax Calculator </h1>
                 <label for="t-amt"> Enter Your Anual Income <i id="question"  class="fa-solid fa-question"> </i>  </label>
                 <input type="text" placeholder="Enter Gross Annual Income  " class="Annual-income" required name="t-amt"
-                id="t-amt">
+                id="t-amt" autocomplete="off">
                 <i id="error1" class="fa-solid fa-circle-exclamation"></i>
 
                 <label for="t-extra"> Enter Extra Income <i id="question2"  class="fa-solid fa-question"> </i> </label>
-                <input type="text" placeholder="Enter Extra Income From Other Source" class="Extra-income" id="t-extra">
+                <input type="text" placeholder="Enter Extra Income From Other Source" class="Extra-income" id="t-extra" required autocomplete="off">
                 <i  id="error2" class="fa-solid fa-circle-exclamation"></i>
 
                 <label for="t-age"> Select Age Group <i id="question3"  class="fa-solid fa-question"> </i> </label>
-               <input type="number" placeholder="Enter Your Age" class="Age" id="t-age">
-
+               <select class="Age" id="t-age">
+                <option value="< 40"> < 40 (Age Under 40) </option>
+                <option value="≥ 40 & < 60"> ≥ 40 & < 60 (Age Under 40 To 60) </option>
+                <option value="≥ 60"> ≥ 60 (Age 60 Above or above 60 ) </option>
+              </select>
                 <label for="t-sub"> Enter total applicable deduction <i id="question4"  class="fa-solid fa-question"> </i> </label>
-                <input type="number" placeholder="Add Total applicable deduction" class="Deduction" id="t-sub">
+                <input type="number" placeholder="Add Total applicable deduction" class="Deduction" id="t-sub" autocomplete="off">
 
             <button class="Submit"> Submit </button>
 

@@ -63,38 +63,48 @@
   font-size: 20px;
 }
 
-nav {
-  background-color: rgb(188, 107, 188);
-  height: 35px;
-}
-
-nav > h1 {
-  color: white;
+ .main-hading {
   text-align: center;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-}
+  margin-bottom: 50px;
+  font-weight: 40px;
+} 
 
 .Calculator-form {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   word-break: normal;
-  border: 2px solid black;
-  height: 480px;
+  height: 490px;
   position: relative;
   position: relative;
-  top: 90px;
+  top: 130px;
   margin: auto;
-  width: 380px;
-  padding-left: 55px;
-  padding-right: 55px;
+  width: 350px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 15px;
   justify-content: center;
-  box-shadow: 0px 4px 15px 5px gray;
+  box-shadow: 0px 4px 15px 5px rgb(185, 180, 180);
+}
+
+#t-amt{
+  height: 30px;
+}
+
+#t-extra{
+  height: 30px;
+}
+#t-age{
+  height: 30px;
+}
+#t-sub{
+  height: 30px;
 }
 
 .Calculator-form > input + label {
-  margin-top: 10px;
+  margin-top: 15px;
 }
 .Calculator-form > input {
   height: 25px;
@@ -103,14 +113,15 @@ nav > h1 {
   position: relative;
   left: 10px;
 }
+
 .Annual-income {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .Extra-income {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .Age {
-  margin-bottom: 5px;
+  margin-bottom: 15px;
 }
 #t-sub {
   margin-bottom: 15px;
@@ -118,10 +129,27 @@ nav > h1 {
 .Calculator-form > button {
   margin-top: 20px;
   color: white;
-  background-color: rgb(175, 71, 190);
-  box-shadow: 0px 1px 6px 2px gray;
+  background-color: rgb(38, 174, 88);
   cursor: pointer;
-  height: 30px;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+}
+.Submit:hover{
+  transform: scale(1.1);
+  background-color: rgb(110, 174, 133); 
+}
+
+select{
+  margin-bottom: 8px;
+  height: 25px;
+}
+
+button:hover{
+  /* transform: scale(1.1); */
+  cursor: pointer;
+
 }
 #question {
   cursor: pointer;
@@ -143,15 +171,21 @@ nav > h1 {
 }
 
 #Next-page > button {
-  width: 90px;
-  height: 30px;
+  width: 120px;
+  height: 35px;
+  border-radius: 5px;
   margin: auto;
   border: none;
-  background-color: blue;
+  background-color: rgb(37, 81, 176);
   color: white;
-  font-size: 18px;
+  font-size: 22px;
   position: relative;
   top: 40px;
+}
+#Next-page > button:hover{
+  background-color: rgb(65, 95, 161);
+  transform: scale(1.1);
+
 }
 
 #Next-page {
@@ -161,7 +195,8 @@ nav > h1 {
 #Next-page > h2 {
   color: green;
   position: relative;
-  top: 49px;
+  top: 50px;
+  font-size: 32px;
 }
 
 #Next-page > h1 {
@@ -171,26 +206,27 @@ nav > h1 {
 
 #Next-page > p {
   position: relative;
-  top: 55px;
+  top: 59px;
 }
 
 #Next-page > button {
   position: relative;
   top: 70px;
+
 }
 
 #error1 {
   position: relative;
-  left: 360px;
-  bottom: 32px;
+  left: 325px;
+  bottom: 39px;
   display: none;
   width: 15px;
 }
 
 #error2 {
   position: relative;
-  left: 360px;
-  bottom: 32px;
+  left: 325px;
+  bottom: 39px;
   display: none;
   width: 15px;
 }
@@ -199,7 +235,7 @@ nav > h1 {
   display: none;
   font-size: 12px;
   position: absolute;
-  top: 195px;
+  top: 230px;
   left: 55%;
   transform: translateX(-50%);
   background-color: rgb(23, 20, 20);
@@ -215,7 +251,7 @@ nav > h1 {
   display: none;
   font-size: 12px;
   position: absolute;
-  top: 255px;
+  top: 299px;
   left: 55%;
   transform: translateX(-50%);
   background-color: rgb(23, 20, 20);
@@ -231,7 +267,7 @@ nav > h1 {
   display: none;
   font-size: 12px;
   position: absolute;
-  top: 320px;
+  top: 380px;
   left: 45%;
   background-color: rgb(23, 20, 20);
   color: white;
@@ -245,7 +281,7 @@ nav > h1 {
   display: none;
   font-size: 12px;
   position: absolute;
-  top: 390px;
+  top: 435px;
   left: 52%;
   border: 1px solid #ccc;
   background-color: rgb(23, 20, 20);
@@ -259,7 +295,7 @@ nav > h1 {
 .tool1 {
   display: none;
   position: absolute;
-  top: 190px;
+  top: 240px;
   left: 68%;
   transform: translateX(-50%);
   background-color: #fff;
@@ -272,7 +308,7 @@ nav > h1 {
 .tool2 {
   display: none;
   position: absolute;
-  top: 268px;
+  top: 320px;
   left: 68%;
   transform: translateX(-50%);
   background-color: #fff;

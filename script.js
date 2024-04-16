@@ -87,33 +87,48 @@ hoverline2.addEventListener("mouseleave", function () {
   tool2.style.display = "none";
 });
 
+
+
 Submit.addEventListener("click", function () {
   const Annualincome = parseInt(document.querySelector(".Annual-income").value);
   const Extraincome = parseInt(document.querySelector(".Extra-income").value);
-  const Age = parseInt(document.querySelector(".Age").value);
+  const Age = document.querySelector(".Age").value;
   const Deduction = parseInt(document.querySelector(".Deduction").value);
 
-  Result.style.display = "block";
 
-  //  Calculate total income after deductions
-  const totalIncome = Annualincome + Extraincome - Deduction;
 
-  if (totalIncome <= 800000) {
-    Taxamt.textContent = "No tax applicable";
+  const numberRegex = /^[0-9]+$/;
+
+
+  if (!numberRegex.test(Annualincome) || !numberRegex.test(Extraincome) || !numberRegex.test(Deduction)) {
+    alert("Please enter Values First.");
+    Result.style.display = "none";
+    return; 
+  }
+
+  if (!Annualincome || !Extraincome || !Age || !Deduction) {
+    alert("Please enter Valid Values.");
+    Result.style.display = "none";
   } else {
-    const taxableIncome = totalIncome - 800000;
+    const totalIncome = Annualincome + Extraincome - Deduction;
 
-    let taxRate = 0;
-    if (Age < 40) {
-      taxRate = 0.3;
-    } else if (Age >= 40 && Age < 60) {
-      taxRate = 0.4;
+    if (totalIncome <= 800000) {
+      Taxamt.textContent = "No tax applicable";
     } else {
-      taxRate = 0.1;
+      const taxableIncome = totalIncome - 800000;
+      let taxRate = 0;
+      if (Age === "< 40") {
+        taxRate = 0.3;
+      } else if (Age === "≥ 40 & < 60") {
+        taxRate = 0.4;
+      } else if (Age === "≥ 60") {
+        taxRate = 0.1;
+      }
+      const taxAmount = taxRate * taxableIncome;
+      Taxamt.textContent = totalIncome - taxAmount;
     }
+    Result.style.display = "block";
 
-    const taxAmount = taxRate * taxableIncome;
-    Taxamt.textContent = totalIncome - taxAmount;
   }
 });
 
