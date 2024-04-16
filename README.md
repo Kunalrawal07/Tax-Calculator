@@ -5,7 +5,7 @@ Welcome to the Tax Calculator! This simple yet powerful tool helps you calculate
 ### Website Link
 [Click here to visit my website!](https://661df85b4c95238797ca187b--lovely-raindrop-1cf97a.netlify.app/)
 
-Alternative Link :- https://661df85b4c95238797ca187b--lovely-raindrop-1cf97a.netlify.app/
+Alternative Link :-[Click Here!](https://661df85b4c95238797ca187b-lovely-rain.netlify.app/)
 ## Overview
 
 This Tax Calculator is a web application developed using HTML, CSS, and JavaScript. It provides a simple yet powerful tool to calculate taxes based on various parameters such as income, age, and deductions.
@@ -42,32 +42,32 @@ After filling in all the details, click the "Submit" button to see your calculat
 
 # Test Cases
 
-### 5. Test Case: Verify the display of the starting introduction window.
+### 1. Test Case: Verify the display of the starting introduction window.
 **Description:** Upon opening the tax calculator application, ensure that the proper introduction window is displayed, providing users with an overview of the application's purpose and functionality.
 
 [![intro.png](https://i.postimg.cc/26VQs0gy/intro.png)](https://postimg.cc/wyYRJQqY)
 
-### 6. Test Case: Test the functionality of the "Calculate Now" button in the introduction window.
+### 2. Test Case: Test the functionality of the "Calculate Now" button in the introduction window.
 **Description:** Click on the "Calculate Now" button in the introduction window and confirm that it navigates to the main tax calculation window.
 
 [![02.png](https://i.postimg.cc/BvWfLzB9/02.png)](https://postimg.cc/18KjbJdJ)
 
-### 1. Test Case: Check if all input fields are visible and accessible.
+### 3. Test Case: Check if all input fields are visible and accessible.
 **Description:** Confirm that all input fields for annual income, extra income, age, and deductions are Not Empty.
 
 [![empty-alert.png](https://i.postimg.cc/4x9rg5k8/empty-alert.png)](https://postimg.cc/3k3Lj2wp)
 
-### 2. Test Case: Validate input Fields.
+### 4. Test Case: Validate input Fields.
 **Description:** Test if the calculator accepts only numerical values for annual income and displays an error message for non-numeric inputs.
 
 [![border-red.png](https://i.postimg.cc/9M8xTRHR/border-red.png)](https://postimg.cc/VrtBPN6m)
 
-### 3. Test Case: Validate the functionality of the submit button.
+### 5. Test Case: Validate the functionality of the submit button.
 **Description:** Confirm that clicking the submit button triggers the tax calculation process and displays the result accurately.
 
 [![submit.png](https://i.postimg.cc/8kF84DXQ/submit.png)](https://postimg.cc/pyt1XNtq)
 
-### 4. Test Case: Test the tax calculation for Selecting age-Group.
+### 6. Test Case: Test the tax calculation for Selecting age-Group.
 **Description:** Verify that the tax calculator correctly handles Through Age-Group.
 
 [![age1.png](https://i.postimg.cc/WzZHvNxd/age1.png)](https://postimg.cc/bSzT0hyP)
